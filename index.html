@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamPrep Library - Competitive Exam Books & PDFs</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- 1. NAVIGATION BAR -->
+    <nav class="bg-blue-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold flex items-center gap-2">
+                <i class="fas fa-book-reader text-yellow-400"></i> ExamPrep<span class="text-yellow-400">Library</span>
+            </a>
+            <div class="hidden md:flex space-x-6 font-medium">
+                <a href="#" class="hover:text-yellow-400 transition">Home</a>
+                <a href="#categories" class="hover:text-yellow-400 transition">Categories</a>
+                <a href="#books" class="hover:text-yellow-400 transition">All Books</a>
+                <a href="#upload" class="hover:text-yellow-400 transition">Upload PDF</a>
+            </div>
+            <button class="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold px-4 py-2 rounded transition shadow">
+                Premium Access
+            </button>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION WITH SEARCH -->
+    <header class="bg-gradient-to-r align-middle from-blue-900 to-indigo-800 text-white py-16 px-4 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Master Your Competitive Exams</h1>
+            <p class="text-lg md:text-xl text-blue-100 mb-8">Download free syllabus-wise reference books, question banks, and notes in PDF format.</p>
+            
+            <!-- Search Bar -->
+            <div class="bg-white p-2 rounded-lg shadow-lg flex flex-col sm:flex-row gap-2">
+                <div class="flex items-center px-3 flex-1 text-gray-500">
+                    <i class="fas fa-search mr-2"></i>
+                    <input type="text" placeholder="Search by Exam, Book Title, or Subject..." class="w-full focus:outline-none text-gray-800 py-2">
+                </div>
+                <button class="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold px-6 py-3 rounded-md transition">
+                    Search
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. EXAM CATEGORIES -->
+    <section id="categories" class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Browse by Examination</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md border border-gray-100 text-center cursor-pointer transition transform hover:-translate-y-1">
+                <div class="w-12 h-12 bg-blue-100 text-blue-900 rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">U</div>
+                <h3 class="font-semibold">UPSC / Civil Services</h3>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md border border-gray-100 text-center cursor-pointer transition transform hover:-translate-y-1">
+                <div class="w-12 h-12 bg-green-100 text-green-900 rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">B</div>
+                <h3 class="font-semibold">Banking & Insurance</h3>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md border border-gray-100 text-center cursor-pointer transition transform hover:-translate-y-1">
+                <div class="w-12 h-12 bg-purple-100 text-purple-900 rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">S</div>
+                <h3 class="font-semibold">SSC & Railways</h3>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md border border-gray-100 text-center cursor-pointer transition transform hover:-translate-y-1">
+                <div class="w-12 h-12 bg-red-100 text-red-900 rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">E</div>
+                <h3 class="font-semibold">Engineering (GATE/JEE)</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. FEATURED BOOKS & PDFS -->
+    <section id="books" class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-2 text-gray-800">Latest Publications & Resources</h2>
+            <p class="text-center text-gray-600 mb-8">Always updated with the newest exam formats and syllabus changes.</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Book Card 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col justify-between">
+                    <div class="p-6">
+                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">UPSC</span>
+                        <h3 class="text-xl font-bold mt-2 mb-1">Indian Polity & Constitution</h3>
+                        <p class="text-sm text-gray-500 mb-4">By M. Laxmikanth (Conceptual Summary)</p>
+                        <p class="text-gray-600 text-sm line-clamp-3">A comprehensive guide for civil services aspirants covering historical backgrounds, amendments, and core structures.</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 border-t border-gray-100 flex items-center justify-between">
+                        <span class="text-sm font-semibold text-gray-600"><i class="far fa-file-pdf text-red-500 mr-1"></i> 14.2 MB</span>
+                        <a href="#" class="bg-blue-900 hover:bg-blue-800 text-white text-sm font-bold px-4 py-2 rounded transition flex items-center gap-1">
+                            <i class="fas fa-download"></i> PDF
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Book Card 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col justify-between">
+                    <div class="p-6">
+                        <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Banking</span>
+                        <h3 class="text-xl font-bold mt-2 mb-1">Quantitative Aptitude Bank PO</h3>
+                        <p class="text-sm text-gray-500 mb-4">By ExamPrep Editorial</p>
+                        <p class="text-gray-600 text-sm line-clamp-3">Over 5000+ solved practice problems, shortcut tricks, and previous year question papers for IBPS & SBI PO.</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 border-t border-gray-100 flex items-center justify-between">
+                        <span class="text-sm font-semibold text-gray-600"><i class="far fa-file-pdf text-red-500 mr-1"></i> 8.5 MB</span>
+                        <a href="#" class="bg-blue-900 hover:bg-blue-800 text-white text-sm font-bold px-4 py-2 rounded transition flex items-center gap-1">
+                            <i class="fas fa-download"></i> PDF
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Book Card 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col justify-between">
+                    <div class="p-6">
+                        <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">SSC / Railways</span>
+                        <h3 class="text-xl font-bold mt-2 mb-1">General Knowledge & Science</h3>
+                        <p class="text-sm text-gray-500 mb-4">2026 Edition</p>
+                        <p class="text-gray-600 text-sm line-clamp-3">Quick review tables, timelines, and static GK topics structured specifically for speed-based competitive exams.</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 border-t border-gray-100 flex items-center justify-between">
+                        <span class="text-sm font-semibold text-gray-600"><i class="far fa-file-pdf text-red-500 mr-1"></i> 22.1 MB</span>
+                        <a href="#" class="bg-blue-900 hover:bg-blue-800 text-white text-sm font-bold px-4 py-2 rounded transition flex items-center gap-1">
+                            <i class="fas fa-download"></i> PDF
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-blue-950 text-gray-400 py-8 text-center text-sm border-t border-blue-900">
+        <div class="container mx-auto px-4">
+            <p class="mb-2 text-white font-medium">&copy; 2026 ExamPrepLibrary. All rights reserved.</p>
+            <p>Disclaimer: Educational resources hosted here are for personal preparation use only. We respect intellectual property rights.</p>
+        </div>
+    </footer>
+
+</body>
+                              </html>
